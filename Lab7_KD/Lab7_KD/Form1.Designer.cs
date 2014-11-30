@@ -35,6 +35,7 @@
             this.keyText = new System.Windows.Forms.TextBox();
             this.encryptButton = new System.Windows.Forms.Button();
             this.decryptButton = new System.Windows.Forms.Button();
+            this.fileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +53,7 @@
             this.fileNameText.Name = "fileNameText";
             this.fileNameText.Size = new System.Drawing.Size(315, 22);
             this.fileNameText.TabIndex = 1;
+            this.fileNameText.TextChanged += new System.EventHandler(this.fileNameText_TextChanged);
             // 
             // selectFileButton
             // 
@@ -61,6 +63,7 @@
             this.selectFileButton.Size = new System.Drawing.Size(38, 35);
             this.selectFileButton.TabIndex = 2;
             this.selectFileButton.UseVisualStyleBackColor = true;
+            this.selectFileButton.Click += new System.EventHandler(this.selectFileButton_Click);
             // 
             // label2
             // 
@@ -77,6 +80,7 @@
             this.keyText.Name = "keyText";
             this.keyText.Size = new System.Drawing.Size(114, 22);
             this.keyText.TabIndex = 4;
+            this.keyText.TextChanged += new System.EventHandler(this.keyText_TextChanged);
             // 
             // encryptButton
             // 
@@ -86,6 +90,7 @@
             this.encryptButton.TabIndex = 5;
             this.encryptButton.Text = "Encrypt";
             this.encryptButton.UseVisualStyleBackColor = true;
+            this.encryptButton.Click += new System.EventHandler(this.encryptButton_Click);
             // 
             // decryptButton
             // 
@@ -95,6 +100,11 @@
             this.decryptButton.TabIndex = 6;
             this.decryptButton.Text = "Decrypt";
             this.decryptButton.UseVisualStyleBackColor = true;
+            this.decryptButton.Click += new System.EventHandler(this.decryptButton_Click);
+            // 
+            // fileDialog
+            // 
+            this.fileDialog.FileName = "fileDialog";
             // 
             // Form1
             // 
@@ -124,6 +134,7 @@
         private System.Windows.Forms.TextBox keyText;
         private System.Windows.Forms.Button encryptButton;
         private System.Windows.Forms.Button decryptButton;
+        private System.Windows.Forms.OpenFileDialog fileDialog;
     }
 }
 
