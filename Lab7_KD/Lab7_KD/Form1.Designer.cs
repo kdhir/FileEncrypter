@@ -119,7 +119,7 @@
             this.Controls.Add(this.fileNameText);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Encrypt/Decrypt Kanav Dhir";
             this.ResumeLayout(false);
             this.PerformLayout();
 

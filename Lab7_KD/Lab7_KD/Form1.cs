@@ -90,6 +90,7 @@ namespace Lab7_KD
             }
             return true;
         }
+        //Encryption Decryption code refrence: http://msdn.microsoft.com/en-us/library/system.security.cryptography.descryptoserviceprovider(v=vs.110).aspx?cs-save-lang=1&cs-lang=csharp#code-snippet-2
         // Encrypt File Method taken from MSDN (customized, added exceptions) 
         private void Encrypt()
         {
